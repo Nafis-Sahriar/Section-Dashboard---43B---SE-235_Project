@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HeroBanner() {
   return (
-    <section className="relative mx-auto mt-28 flex min-h-[25vh] w-[90%] flex-col items-center justify-center overflow-hidden rounded-3xl bg-[#100774] md:mt-25">
+    <section className="relative mx-auto mt-28 flex min-h-[25vh] w-[90%] flex-col items-center justify-center overflow-hidden rounded-xl bg-[#100774] md:mt-25">
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/herobg.png')" }}
