@@ -13,8 +13,9 @@ export const notices = [
     date: "20/07/2026",
     priority: "high",
     status: "active",
-    description: "The evaluation of the Operating System and System Programming lab will be conducted on 20th July 2026. All students are required to submit their lab reports before the evaluation." 
+    description: "The evaluation of the Operating System and System Programming lab will be conducted on 20th July 2026. Syllabus : Linux Commands that were taught till 2nd Lab Class." 
   },
+ 
 ];
 
 export const routine = [
@@ -35,14 +36,57 @@ export const routine = [
 
 export const courses = [
   {
+    id: "SE-231",
+    title: "System Analysis & Design Capstone Project",
+    coverImage: "",
+    instructor: {
+      name: "Dr.Kamrul Islam Shahin",
+      email: "drshahin.swe@diu.edu.bd",
+      phone: "+880 1936724404",
+      room: "608"
+    },
+    links: {
+      whatsapp: "https://chat.whatsapp.com/LtiUIeVg14bGBBLuvyRnj7",
+      blc: "https://elearn.daffodilvarsity.edu.bd/course/view.php?id=36923",
+      drive: "https://drive.google.com/drive/u/0/folders/1ToS_WPR-6xMqOdkT14g10j3uWmmgVLzt"
+    },
+    recordedClasses: [
+        {
+        id: 1,
+        classTitle: "SAD - Online Class 1",
+        date: "N/A",
+        embedLink: "https://www.youtube.com/embed/UphDxjGCjXc?si=TUQNosrKTJPQQjIm" 
+      },
+        {
+        id: 2,
+        classTitle: "SAD - Online Class 2",
+        date: "N/A",
+        embedLink: "https://www.youtube.com/embed/h0MDxwCGWME?si=EJhXJSMZEURgKTpL" 
+      },
+      {
+        id: 3,
+        classTitle: "SAD - Online Class 3",
+        date: "N/A",
+        embedLink: "https://www.youtube.com/embed/85hcxz1aV-U?si=YR_xCM8q98w_SJF3"
+      },
+      {
+        id: 4,
+        classTitle: "SAD - Online Class 4",
+        date: "N/A",
+        embedLink: "https://www.youtube.com/embed/3Q8MbIKsVo8?si=ipc4iqFZsa4wsI6Z"
+      }
+    ],
+    previousQuestions: []
+  },
+  {
     id: "SE-235",
     title: "Desktop & Web Programming",
-    coverImage: "/images/web-prog-cover.jpg",
+    coverImage: "",
     instructor: {
       name: "Partha Chanda",
       email: "chanda.swe@diu.edu.bd",
       phone: "+880 1556-628930",
-      room: "811"
+      room: "908"
     },
     links: {
       whatsapp: "https://chat.whatsapp.com/Krtn276t2Tm1UGQKj3goQc",
@@ -51,18 +95,31 @@ export const courses = [
     },
     recordedClasses: [],
     previousQuestions: [
-      {
-        id: 1,
-        semester: "Fall 25",
-        examType: "Midterm",
-        fileLink: "https://drive.google.com/file/d/example-mid"
-      }
+      
     ]
   },
   {
-    id: "SE233",
+    id: "SE-236",
+    title: "Desktop & Web Programming Lab",
+    coverImage: "",
+    instructor: {
+      name: "Partha Chanda",
+      email: "chanda.swe@diu.edu.bd",
+      phone: "+880 1556-628930",
+      room: "908"
+    },
+    links: {
+      whatsapp: "https://chat.whatsapp.com/Krtn276t2Tm1UGQKj3goQc",
+      blc: "https://elearn.daffodilvarsity.edu.bd/course/view.php?id=36472",
+      drive: "https://drive.google.com/drive/folders/example-web"
+    },
+    recordedClasses: [],
+    previousQuestions: []
+  },
+  {
+    id: "SE-232",
     title: "Operating System & System Programming",
-    coverImage: "/images/os-cover.jpg",
+    coverImage: "",
     instructor: {
       name: "Israt Sultana",
       email: "ishrat.swe@diu.edu.bd",
@@ -77,15 +134,46 @@ export const courses = [
     recordedClasses: [
       {
         id: 1,
-        classTitle: "Process Scheduling Algorithms",
-        date: "10/06/2026",
-        embedLink: "https://www.youtube.com/embed/example3"
+        classTitle: "OS - Online Class - Mid Syllabus Recap",
+        date: "01/07/2026",
+        embedLink: "https://www.youtube.com/embed/PQZmhykty4o?si=yBlUDAuqk5X0iW88" 
       }
     ],
+    previousQuestions: [
+      {
+        id: 1,
+        semester: "Fall 25",
+        examType: "Final",
+        fileLink: "/osFinalFall2025.pdf"
+      },
+       {
+        id: 2,
+        semester: "Spring 24",
+        examType: "Final",
+        fileLink: "/os_Final_Spring_2024.pdf"
+      },
+    ]
+  },
+  {
+    id: "SE-233",
+    title: "Operating System & System Programming Lab",
+    coverImage: "",
+    instructor: {
+      name: "Israt Sultana",
+      email: "ishrat.swe@diu.edu.bd",
+      phone: "", 
+      room: ""
+    },
+    links: {
+      whatsapp: "", 
+      blc: "https://blc.university.edu/course/view.php?id=233",
+      drive: ""
+    },
+    recordedClasses: [],
     previousQuestions: []
   },
   {
-    id: "TOC101",
+    id: "SE-234",
     title: "Theory of Computing",
     coverImage: "", 
     instructor: {
@@ -102,34 +190,29 @@ export const courses = [
     recordedClasses: [],
     previousQuestions: []
   },
-  {
-    id: "SE-231",
-    title: "System Analysis & Design Capstone Project",
-    coverImage: "",
-    instructor: {
-      name: "DKS",
-      email: "drshahin.swe@diu.edu.bd",
-      phone: "",
-      room: ""
-    },
-    links: {
-      whatsapp: "",
-      blc: "",
-      drive: ""
-    },
-    recordedClasses: [],
-    previousQuestions: []
-  }
+  
 ];
 
 export const upcomingExams = [
-  { id: 1, course: "Operating System & System Programming", date: "25/07/2026", time: "10:00 AM", type: "Midterm", syllabus: "Chapters 1-4" },
-  { id: 2, course: "Desktop & Web Programming", date: "28/07/2026", time: "02:00 PM", type: "Quiz", syllabus: "React Hooks & Context API" },
-  { id: 3, course: "Theory of Computing", date: "05/08/2026", time: "11:30 AM", type: "Class Test", syllabus: "" } 
+  { 
+    id: 1, 
+    course: "Operating System & System Programming", 
+    date: "19/07/2026", 
+    time: "10:00 AM", 
+    type: "Quiz-2", 
+    syllabus: "" 
+  },
+  { 
+    id: 2, 
+    course: "Operating System & System Programming", 
+    date: "20/07/2026", 
+    time: "11:30 AM (B1) / 01:00 PM (B2)", 
+    type: "Lab Evaluation", 
+    syllabus: "Linux Commands that were taught till 2nd Lab Class" 
+  },
 ];
 
 export const deadlines = [
-  { id: 1, course: "System Analysis & Design Capstone Project", title: "Project Proposal Submission", dueDate: "20/07/2026", type: "Presentation" },
-  { id: 2, course: "Operating System & System Programming", title: "Scheduling Algorithm Implementation", dueDate: "22/07/2026", type: "Lab Assignment" },
-  { id: 3, course: "Desktop & Web Programming", title: "React Component Library Setup", dueDate: "24/07/2026", type: "" } 
+  { id: 1, course: "System Analysis & Design Capstone Project", title: "Lab Evaluation - Presentaion", dueDate: "15/07/2026", type: "Presentation", status: "expired" },
+  { id: 2, course: "Desktop & Web Programming", title: "Lab Assignment Submission", dueDate: "19/07/2026", type: "Assignment", status: "active" } 
 ];

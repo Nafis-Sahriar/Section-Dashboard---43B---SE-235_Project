@@ -5,16 +5,16 @@ export default function HeroBanner() {
     <section className="relative mx-auto mt-28 flex min-h-[25vh] w-[90%] flex-col items-center justify-center overflow-hidden rounded-xl bg-[#100774] md:mt-25">
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/herobg.png')" }}
+        style={{ backgroundImage: "url('/bannerbg.jpg')" }}
       >
-        <div className="absolute inset-0 bg-[#100774]/50"></div>
+        <div className="absolute inset-0 bg-[#000001]/70"></div>
       </div>
 
       <div className="relative z-10 flex w-full flex-col items-center px-4 py-6 text-center">
         <h1 className="mb-2 text-xl font-black tracking-tight text-[#fbffff] sm:text-2xl md:text-3xl lg:text-4xl">
-          Welcome to Section 43-B
+           43-B
         </h1>
-        <p className="mb-5 max-w-[90%] text-xs font-medium text-[#b7d6ee] sm:text-sm md:text-base">
+        <p className="mb-5 max-w-[90%] text-xs font-medium text-[#ecf0f3] sm:text-sm md:text-base">
           Your centralized hub for routines, deadlines, and course materials.
         </p>
 
