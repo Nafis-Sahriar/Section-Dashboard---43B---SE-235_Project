@@ -21,9 +21,7 @@ export default async function DeadlinesPage() {
         </p>
       </div>
 
-      {/* ========================================= */}
-      {/* SECTION 1: Upcoming (Active) Deadlines    */}
-      {/* ========================================= */}
+   
       <section>
         <div className="mb-4 flex items-center gap-2">
           <FiTarget className="text-green-600" size={18} />
@@ -41,7 +39,7 @@ export default async function DeadlinesPage() {
                   <h3 className="text-sm font-semibold leading-snug text-[#0e376f]">
                     {deadline.title}
                   </h3>
-                  {/* Active Status Chip */}
+             
                   <span className="flex shrink-0 items-center gap-1.5 rounded bg-green-50 px-2 py-1 text-[10px] font-bold uppercase tracking-wider text-green-600 border border-green-100">
                     <span className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse"></span>
                     Active
@@ -73,9 +71,7 @@ export default async function DeadlinesPage() {
         )}
       </section>
 
-      {/* ========================================= */}
-      {/* SECTION 2: Expired Deadlines              */}
-      {/* ========================================= */}
+    
       <section>
         <div className="mb-4 flex items-center gap-2">
           <FiArchive className="text-gray-400" size={18} />

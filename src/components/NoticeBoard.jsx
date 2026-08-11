@@ -52,7 +52,6 @@ export default async function NoticeBoard() {
                 {notice.description}
               </p>
 
-              {/* Date */}
               <div className="mt-1 flex items-center gap-1.5 text-xs font-semibold text-gray-400">
                 <FiCalendar size={14} />
                 <span>{notice.date}</span>
@@ -60,7 +59,6 @@ export default async function NoticeBoard() {
             </div>
           ))
         ) : (
-          /* Empty State */
           <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-gray-300 py-8 text-center">
             <p className="text-sm font-semibold text-gray-500">No active notices right now.</p>
           </div>

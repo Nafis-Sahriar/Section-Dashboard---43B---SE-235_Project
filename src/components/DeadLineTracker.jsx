@@ -5,7 +5,6 @@ import { FiCalendar, FiTarget, FiArrowRight } from "react-icons/fi";
 export default async function DeadlineTracker() {
   const allDeadlines = await getDeadlines();
   
-  // Filter for active deadlines only, THEN slice the top 4
   const activeDeadlines = allDeadlines.filter(deadline => deadline.status === "active");
   const topDeadlines = activeDeadlines.slice(0, 4);
 
@@ -39,7 +38,6 @@ export default async function DeadlineTracker() {
                 <h3 className="text-sm font-semibold leading-snug text-[#0e376f]">
                   {deadline.title}
                 </h3>
-                {/* Active Status Chip with pulsing dot */}
                 <span className="flex shrink-0 items-center gap-1.5 rounded bg-green-50 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-green-600">
                   <span className="h-1.5 w-1.5 rounded-full bg-green-500 animate-pulse"></span>
                   Active
